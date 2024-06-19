@@ -1,0 +1,36 @@
+{
+    "name": "vod.js",
+    "version": "0.0.1-dev",
+    "description": "vod.js is an Express.js framework with MVC architecture",
+    "main": "vod.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node vod.js",
+        "dev": "nodemon vod.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/callvgroup/vodjs.git"
+    },
+    "keywords": [
+        "framework",
+        "mvc",
+        "routing",
+        "vod",
+        "web",
+        "http",
+        "express",
+        "ejs"
+    ],
+    "author": "Refkinscallv",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/callvgroup/vodjs/issues"
+    },
+    "homepage": "https://github.com/callvgroup/vodjs#readme",
+    "dependencies": {
+        "ejs": "^3.1.10",
+        "express": "^4.19.2",
+        "nodemon": "^3.1.3"
+    }
+}
