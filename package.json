@@ -2,7 +2,7 @@
     "name": "vod.js",
     "version": "0.0.1-dev",
     "description": "vod.js is an Express.js framework with MVC architecture",
-    "main": "vod.js",
+    "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node vod.js",
