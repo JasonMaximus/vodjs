@@ -1,0 +1,20 @@
+/**
+ * model sample
+ */
+
+const { vodModel } = require("vodjs");
+
+class myModel extends vodModel {
+
+    constructor() {
+        super();
+    }
+
+    data() {
+        return {
+            name: "John Doe",
+            address: "California"
+        };
+    }
+
+}

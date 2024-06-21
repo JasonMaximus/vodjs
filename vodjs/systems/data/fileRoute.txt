@@ -1,0 +1,22 @@
+/*
+ * App route
+ */
+
+// Import vodRoute from vodjs module
+const { vodRoute } = require("vodjs");
+
+// Create an instance of vodRoute
+const route = new vodRoute();
+
+// Set a route for GET request on '/'
+route.set("GET /", {
+    // Specify the controller and method to handle the request
+    controller: "myController@index", // myController is the class name, index is the method name inside myController class
+    // Set parameter to true to extract values from the URL path
+    parameter: true,
+});
+
+// Run the route configuration
+route.run();
+
+// Summary: This script configures a route for a GET request on the root path ('/'). It sets the controller and method ('myController@index') to handle the request, allowing parameters to be extracted from the URL path. The script utilizes the vodRoute module from vodjs to manage route definitions effectively.

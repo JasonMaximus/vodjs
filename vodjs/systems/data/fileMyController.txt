@@ -1,0 +1,19 @@
+/**
+ * controller sample
+ */
+
+const { vodController } = require("vodjs");
+
+class myController extends vodController {
+
+    constructor(){
+        super();
+
+        this.mymodel = this.load.model("myModel");
+    }
+
+    index() {
+        this.load.view("index", this.mymodel.data);
+    }
+
+}

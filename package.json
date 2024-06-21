@@ -1,6 +1,6 @@
 {
     "name": "vodjs",
-    "version": "0.0.2-dev",
+    "version": "0.0.5-dev",
     "description": "vod.js is an Express.js framework with MVC architecture",
     "main": "app.js",
     "scripts": {

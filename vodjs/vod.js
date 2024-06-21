@@ -7,19 +7,27 @@
 'use strict'
 
 const vodGenerating = require("./systems/vodGenerating");
-const vodExpress    = require("./vodExpress");
+const vodServer     = require("./vodServer");
 
 class Vod {
 
     constructor(param = {}) {
-        if(Object.keys(param).length === 0){
-            console.error(`[Vod] Error : Parameters is required 'new Vod({ parameters })'`);
+        if (Object.keys(param).length === 0) {
+            console.error(`[Vod] Error: parameters are required. Use 'new Vod({ generating: ?, PORT: ?, expressConfig: ? })'`);
         } else {
-            new vodGenerating(param);
+            if(typeof param.generating !== "undefined" && param.generating) {
+                console.log(`[Vod] Initializing: starting the generation process with provided parameters...`);
+                new vodGenerating(param);
+            } else {
+                console.log(`[Vod] Server : running 'Vod' application...`);
+                this.run(param);
+            }
         }
     }
 
-    run() {}
+    run(param) {
+        new vodServer(param);
+    }
 
 }
 
