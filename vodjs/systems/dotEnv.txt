@@ -1,0 +1,9 @@
+# application & environment
+PORT        = 39001
+BASE_URL    = "http://localhost:39001/"
+
+# database
+DB_HOST     = "localhost"
+DB_USER     = "root"
+DB_PASS     = ""
+DB_NAME     = ""
